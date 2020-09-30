@@ -1,0 +1,18 @@
+/* font-family: 'Pacifico', cursive; */
+body {
+  margin: 0;
+}
+
+#cover-container {
+  background-image: url("../images/cover.JPG");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+#logo {
+  font-family: 'Pacifico', cursive;
+  color: darkorchid;
+  margin: 0;
+}
