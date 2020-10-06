@@ -1,9 +1,6 @@
 /* font-family: 'Pacifico', cursive; */
-body {
-  margin: 0;
-}
 
-#cover-container {
+/* #cover-container {
   background-image: url("../images/cover.JPG");
   background-position: center center;
   background-attachment: fixed;
@@ -32,17 +29,122 @@ body {
   color: rgb(123, 30, 191);
   font-family: sans-serif;
   font-size: 2em;
+} */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+a { 
+  text-decoration:none;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-color: lightgray;
+}
+
+header > nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+header > nav > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(123, 30, 191);
+  background: red;
+  padding: 0 25px;
 }
 
 .logo {
   margin: 0;
+  padding: 5px;
   color: rgb(123, 30, 191);
   font-family: 'Pacifico', cursive;
-  font-size: 5em;
+  font-size: 2em;
 }
 
 main {
-  height: 100vh;
   background-color: rgb(200, 164, 218);
-  position: relative;
+}
+
+#sale-content-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#sale-description-box, #sale-graphic-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sale-description-box {
+  flex-direction: column;
+}
+
+#sale-description {
+  width: 70%;
+}
+
+#feature-background {
+  height: 100vh;
+  background-image: url(../images/feature_male_female.jpg);
+  background-size: cover;
+}
+
+#feature-white-cover {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#feature-content-box {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  width: 35%;
+}
+
+#feature-header-box {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+#feature-header-content > h1 {
+  font-size: 1.2em;
+}
+
+#pseudo-buttons-box {
+  display: flex;
+  justify-content: space-around;
 }
