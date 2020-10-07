@@ -1,17 +1,51 @@
-/* font-family: 'Nunito', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Source Sans Pro', sans-serif; */
 
 /* main styling */
 main {
-  background-color: #FCF7F1;
+  background-color: white;
 }
 
-/* sale content box styling: sale-description(column 1), sale-graphic (column 2) */
+/* site sale box styling */
+#site-sale-background-box {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/fall_2.jpg");
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#site-sale-content {
+  text-align: center;
+  height: 50%;
+  color: white;
+}
+
+#site-sale-content > h1 {
+  font-family: 'Lora', serif;
+  display: inline;
+  padding: 0 40px 0 40px;
+}
+
+#right-border {
+  border-right: white solid 2px;
+}
+
+#site-sale-pseudo-buttons {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+#site-sale-pseudo-buttons > a {
+  color: white;
+  padding: 15px;
+  margin: 53px;
+  border: solid white 2px;
+}
+
+/* sale content box styling */
 #sale-content-box {
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
+  margin: 15px 0 15px 0;
 }
 
 #sale-description-box, #sale-graphic-box {
@@ -23,6 +57,7 @@ main {
 }
 
 #sale-description-box {
+  background-color: #FCF7F1;
   flex-direction: column;
 }
 
@@ -38,6 +73,10 @@ main {
   background-color: #FF7F50;
   color: black;
   padding: 12px;
+}
+
+#sale-graphic-box > img {
+  width: 50%;
 }
 
 /* feature content box styling*/
@@ -61,10 +100,10 @@ main {
   grid-row: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #feature-header-content > h1 {
-  background-color: #FCF7F1;
   padding: 8px;
   font-size: 1.2em;
 }

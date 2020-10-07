@@ -1,3 +1,9 @@
+/* font-family: 'Lora', serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
 /* overall styling */
 html {
   box-sizing: border-box;
@@ -12,6 +18,7 @@ body {
 
 a { 
   text-decoration: none;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 img {
