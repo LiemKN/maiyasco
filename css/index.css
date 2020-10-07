@@ -47,8 +47,6 @@ body {
 
 a { 
   text-decoration: none;
-  color: white;
-  background-color: #FF7F50;
 }
 
 img {
@@ -125,6 +123,7 @@ main {
 }
 
 #sale-description > p > a {
+  background-color: #FF7F50;
   color: black;
   padding: 12px;
 }
@@ -153,6 +152,8 @@ main {
 }
 
 #feature-header-content > h1 {
+  background-color: #FCF7F1;
+  padding: 8px;
   font-size: 1.2em;
 }
 
@@ -169,6 +170,7 @@ main {
 #pseudo-buttons > a {
   padding: 15px;
   color: black;
+  background-color: #FCF7F1;
 }
 
 /* footer styling */
