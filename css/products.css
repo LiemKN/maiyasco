@@ -18,19 +18,20 @@ main {
 #product-container > a {
   position: relative;
   margin: 10px 10px 5px 10px;
-  height: 400px;
+  /* height: 400px; */
 }
 
-#product-container > a:hover > .front {
-  opacity: 0;
+.back { 
+  position: absolute;
 }
 
 .front {
-  transition: .25s linear;
+  position: relative;
+  transition: .25s;
 }
 
-.front, .back {
-  position: absolute;
+.front:hover {
+  opacity: 0;
 }
 
 .product-info {
