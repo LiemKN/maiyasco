@@ -38,6 +38,7 @@ header {
   top: 0;
   width: 100%;
   background-color: #FF7F50;
+  z-index: 5;
 }
 
 header > nav {
