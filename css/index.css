@@ -8,6 +8,7 @@ main {
 #site-sale-background-box {
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/fall_2.jpg");
   padding: 50px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
 }
@@ -45,7 +46,7 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  margin: 15px 0 15px 0;
+  margin: 15px 0;
 }
 
 #sale-description-box, #sale-graphic-box {

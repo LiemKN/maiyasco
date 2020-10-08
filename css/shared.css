@@ -23,6 +23,7 @@ a {
 
 img {
   width: 100%;
+  display: block;
 }
 
 .logo {
@@ -39,6 +40,16 @@ header {
   width: 100%;
   background-color: #FF7F50;
   z-index: 5;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#hamburger-icon {
+  display: none;
+}
+
+.logo-image {
+  max-width: 100px;
 }
 
 header > nav {
@@ -57,10 +68,11 @@ header > nav > a {
   text-decoration: none;
   color: white;
   padding: 0 25px;
+  transition: 0.25s linear;
 }
 
-header > nav > a > img {
-  max-width: 100px;
+header > nav > a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* footer styling */
@@ -136,4 +148,22 @@ footer > p {
 
 #socials > p {
   padding: 0 0 0 15px;
+}
+
+@media (max-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    padding: 10px;
+    display: block;
+    height: 100%;
+  }
 }
