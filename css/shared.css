@@ -117,8 +117,8 @@ footer {
   display: flex;
 }
 
-#socials-contacts > p {
-  padding-bottom: 8px;
+#socials-contacts > ul > li, #socials-contacts > ul > li > a {
+  padding: 5px 0;
 }
 
 /* smaller screen styling */
@@ -190,5 +190,9 @@ footer {
 
   footer {
     padding: 20px 30px;
+  }
+
+  #socials-contacts {
+    font-size: 0.8em;
   }
 }
