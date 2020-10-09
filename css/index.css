@@ -88,7 +88,7 @@ main {
 /* feature content box styling*/
 #feature-background {
   height: 100vh;
-  background-image: url(../images/feature_male_female.jpg);
+  background: url(../images/feature_male_female.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -97,13 +97,10 @@ main {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: auto 34% auto;
   grid-template-rows: auto auto;
 }
 
 #feature-header-box {
-  grid-column: 2;
-  grid-row: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,23 +111,33 @@ main {
   font-size: 1.2em;
 }
 
-#pseudo-buttons-box {
-  grid-row: 2;
-  grid-column: 2;
-}
-
-#pseudo-buttons {
+#pseudo-button {
   display: flex;
   justify-content: space-around;
 }
 
-#pseudo-buttons > a {
+#pseudo-button > a {
   padding: 15px;
   color: black;
   background-color: #FCF7F1;
 }
 
+/* smaller screen styling */
+@media (max-width: 965px) {
+  /* feature content box styling*/
+  #feature-background {
+    background: url(../images/feature_model_1.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  #feature-header-content {
+    text-align: center;
+  }
+}
+
+/* smaller screen styling */
 @media (max-width: 800px) {
+  /* sale content box styling */
   #sale-description {
     font-size: 0.8em;
   }
@@ -140,7 +147,9 @@ main {
   }
 }
 
+/* smaller screen styling */
 @media (max-width: 610px) {
+  /* site sale box styling */
   #site-sale-background-box {
     padding: 20px;
     display: flex;
@@ -176,6 +185,7 @@ main {
     font-size: 0.8em;
   }
 
+  /* sale content box styling */
   #sale-description-box {
     padding: 20px 0;
   }
