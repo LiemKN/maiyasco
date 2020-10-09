@@ -42,3 +42,24 @@ main {
 .product-info > h4, p {
   margin: 5px 0;
 }
+
+/* smaller screen styling */
+@media (max-width: 700px) {
+  main {
+    margin: 50px 90px;
+  }
+
+  #product-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    margin: 50px 60px;
+  }
+
+  #product-container {
+    grid-template-columns: 1fr;
+  }
+}

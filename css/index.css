@@ -212,7 +212,9 @@ main {
   }
 }
 
+/* smaller screen styling */
 @media (max-width: 500px) {
+  /* featured section style */
   #feature-background {
     background: url(../images/feature_model_1_mobile.jpg) no-repeat;
     background-size: cover;
