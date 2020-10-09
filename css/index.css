@@ -25,7 +25,7 @@ main {
   padding: 0 40px 0 40px;
 }
 
-#right-border {
+#separator {
   border-right: white solid 2px;
 }
 
@@ -123,4 +123,39 @@ main {
   padding: 15px;
   color: black;
   background-color: #FCF7F1;
+}
+
+@media (max-width: 600px) {
+  #site-sale-background-box {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #site-sale-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  #site-sale-content > h1 {
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  #separator {
+    border-right: none;
+    border-bottom: white solid 2px;
+  }
+  
+  #site-sale-pseudo-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  #site-sale-pseudo-buttons > a {
+    padding: 15px;
+    margin:  10px 60px;
+  }
 }
