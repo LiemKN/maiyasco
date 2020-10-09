@@ -60,17 +60,22 @@ main {
 #sale-description-box {
   background-color: #FCF7F1;
   flex-direction: column;
+  padding: 20px 0;
 }
 
 #sale-description {
   width: 70%;
 }
 
+#sale-description > h1 {
+  margin-top: 0;
+}
+
 #sale-pseudo-button {
   margin-top: 35px;
 }
 
-#sale-description > p > a {
+#sale-pseudo-button > a {
   background-color: #FF7F50;
   color: black;
   padding: 12px;
@@ -125,7 +130,17 @@ main {
   background-color: #FCF7F1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  #sale-description {
+    font-size: 0.8em;
+  }
+
+  #sale-graphic-box > img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 610px) {
   #site-sale-background-box {
     padding: 20px;
     display: flex;
@@ -157,7 +172,32 @@ main {
   
   #site-sale-pseudo-buttons > a {
     padding: 15px;
-    margin:  10px 60px;
+    margin:  10px 20%;
     font-size: 0.8em;
+  }
+
+  #sale-description-box {
+    padding: 20px 0;
+  }
+
+  #sale-description {
+    font-size: 0.6em;
+  }
+
+  #sale-description > h1 {
+    margin: 0;
+  }
+
+  #sale-pseudo-button {
+    margin-top: 20px;
+  }
+
+  #sale-pseudo-button > a {
+    background-color: #FF7F50;
+    padding: 10px;
+  }
+
+  #sale-graphic-box > img {
+    width: 100%;
   }
 }
