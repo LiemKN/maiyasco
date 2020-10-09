@@ -139,6 +139,7 @@ main {
   }
   
   #site-sale-content > h1 {
+    font-size: 1.3em;
     padding: 10px 0;
     margin: 0;
   }
@@ -157,5 +158,6 @@ main {
   #site-sale-pseudo-buttons > a {
     padding: 15px;
     margin:  10px 60px;
+    font-size: 0.8em;
   }
 }
