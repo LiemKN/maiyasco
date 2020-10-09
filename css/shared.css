@@ -26,11 +26,6 @@ img {
   display: block;
 }
 
-.logo {
-  margin: 0;
-  padding: 0 10px 0 20px;
-}
-
 /* header and children styling */
 header {
   position: sticky;
@@ -40,44 +35,48 @@ header {
   width: 100%;
   background-color: #FF7F50;
   z-index: 5;
-  display: grid;
-  grid-template-columns: auto 1fr;
 }
 
-#hamburger-icon {
+#mobile-logo {
   display: none;
+}
+
+#desktop-logo {
+  margin: 0;
+  padding: 0 10px 0 20px;
 }
 
 .logo-image {
   max-width: 100px;
 }
 
-header > nav {
+#hamburger-icon {
+  display: none;
+}
+
+header > nav > ul {
   margin: 0;
   padding: 0;
-  width: 100%;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: stretch;
 }
 
-header > nav > a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+header > nav > ul > li > a {
+  display: block;
   color: white;
-  padding: 0 25px;
+  padding: 27px;
   transition: 0.25s linear;
 }
 
-header > nav > a:hover {
+header > nav > ul > li > a:hover:not(#desktop-logo) {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* footer styling */
 footer {
-  background-color: #FF7F50ff;
+  background-color: #FF7F50;
   color: white;
   display: grid;
   grid-template-rows: auto auto;
@@ -150,20 +149,56 @@ footer > p {
   padding: 0 0 0 15px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  header > nav {
-    display: none;
+  #mobile-logo {
+    display: inline;
+    margin: 0;
+    padding: 0 10px 0 20px;
   }
 
   #hamburger-icon {
-    padding: 10px;
-    display: block;
+    padding: 21px;
+    display: flex;
+    align-items: center;
     height: 100%;
+    transition: 0.25s linear;
+  }
+
+  #hamburger-icon:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  #desktop-logo-list-item, #desktop-logo {
+    display: none;
+  }
+
+  header > nav {
+    background-color: #FF7F50;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+
+  header > nav.open {
+    display: block;
+    transition: 0.25s linear;
+  }
+
+  header > nav > ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header > nav > ul > li {
+    border-top: white solid 1px;
+    border-left: white solid 1px;
   }
 }
