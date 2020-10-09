@@ -21,6 +21,17 @@ a {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  margin-top: 5px;
+  width: 100%;
+}
+
 img {
   width: 100%;
   display: block;
@@ -57,7 +68,6 @@ header {
 header > nav > ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -78,78 +88,55 @@ header > nav > ul > li > a:hover:not(#desktop-logo) {
 footer {
   background-color: #FF7F50;
   color: white;
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
+  padding: 50px 150px;
 }
 
-footer > h3 {
-  margin: 50px 0 0 75px;
-  padding: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
+#slogan > h3, #about-us > p, #mailing-form > h5, #socials-contacts > p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-#mailing-form {
-  width: 54%;
-  margin: 0 0 75px 75px;
-  padding: 0 15px 15px 15px;
-  grid-row: 2;
-  grid-column: 1;
-  font-family: 'Nunito', sans-serif;
+#slogan-about-us-box {
+  display: flex;
 }
 
-#mailing-form > h5 {
-  margin: 16px 0 15px 0;
+#about-us > p, #mailing-form {
+  margin-left: 70px;
 }
 
-#mailing-form > label {
-  padding: 12px;
-  background-color: white;
+#slogan > h3, #socials-contacts > p {
+  width: 19vw;
 }
 
-#mailing-form > label:focus-within {
-  outline-color: black;
-  outline-width: 2px;
-  outline-style: solid;
+#slogan > h3 {
+  font-family: 'Sansita Swashed', cursive;
 }
 
-#mailing-form > label > input {
-  font-size: 1.1em;
-  border: none;
-  background: none;
-  outline: none;
+#socials-contacts-mailing-form-box {
+  margin-top: 30px;
+  display: flex;
 }
 
-#mailing-form > label > button {
-  border: none;
-  position: relative;
-  background: white;
-}
-
-#mailing-form > label > button > svg {
-  position: absolute;
-  bottom: 0;
-}
-
-footer > p {
-  grid-row: 1;
-  grid-column: 2;
-  margin: 50px 0 0 0;
-  padding: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-#socials {
-  grid-row: 2;
-  grid-column: 2;
-  font-family: 'Source Sans Pro', sans-serif;
-} 
-
-#socials > p {
-  padding: 0 0 0 15px;
+#socials-contacts > p {
+  padding-bottom: 8px;
 }
 
 /* smaller screen styling */
+
+/* footer styling */
+@media (max-width: 950px) {
+  footer {
+    padding: 35px 80px;
+  }
+}
+
+@media (max-width: 750px) {
+  footer {
+    padding: 35px 60px;
+  }
+}
+
+/*  header styling */
 @media (max-width: 700px) {
   header {
     display: flex;
@@ -199,5 +186,9 @@ footer > p {
   header > nav > ul > li {
     border-top: white solid 1px;
     border-left: white solid 1px;
+  }
+
+  footer {
+    padding: 20px 30px;
   }
 }
