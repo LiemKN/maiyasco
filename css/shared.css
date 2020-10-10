@@ -121,12 +121,20 @@ footer {
   padding: 5px 0;
 }
 
+#mailing-form > p {
+  margin: 6% 0;
+}
+
 /* smaller screen styling */
 
 /* footer styling */
 @media (max-width: 950px) {
   footer {
     padding: 35px 80px;
+  }
+
+  #mailing-form > p {
+    margin: 7% 0;
   }
 }
 
