@@ -100,6 +100,10 @@ footer {
   display: flex;
 }
 
+#about-us > p {
+  font-family: serif;
+}
+
 #about-us > p, #mailing-form {
   margin-left: 70px;
 }
