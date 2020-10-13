@@ -43,6 +43,10 @@ main {
   margin: 5px 0;
 }
 
+.sale, strike {
+  color: red;
+}
+
 /* smaller screen styling */
 @media (max-width: 700px) {
   main {
