@@ -1,1 +1,1 @@
-Link: https://liemkn.github.io/maiyasco/index.html
+Link: https://liemkn.github.io/maiyasco/
